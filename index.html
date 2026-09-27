@@ -36,7 +36,7 @@ header{position:sticky;top:0;z-index:10;padding-block:1rem;background:color-mix(
 .nav ul{display:flex;gap:1.5rem;list-style:none;margin:0;padding:0}
 .nav a{color:var(--ink-soft);font-weight:600;font-size:.95rem}
 .nav a:hover{color:var(--ink)}
-@media(max-width:640px){.nav ul{display:none}}
+@media(max-width:640px){.nav ul{display:none}.nav .btn{padding:.6rem 1rem;font-size:.85rem}}
 
 .btn{display:inline-flex;align-items:center;gap:.4rem;padding:.75rem 1.5rem;border-radius:999px;font-weight:700;font-size:.95rem}
 .btn--accent{background:var(--accent);color:var(--accent-ink)}
@@ -49,7 +49,8 @@ header{position:sticky;top:0;z-index:10;padding-block:1rem;background:color-mix(
 .hero h1 .arrow{color:var(--accent)}
 .hero .lede{font-size:1.05rem;max-width:42ch;margin-bottom:1.4rem}
 .hero-card{background:linear-gradient(155deg,var(--purple),var(--accent));border-radius:24px;aspect-ratio:1/1;display:flex;flex-direction:column;justify-content:flex-end;padding:1.4rem;box-shadow:var(--shadow)}
-.hero-card .avatar{width:3.4rem;height:3.4rem;border-radius:50%;background:rgba(0,0,0,.25);display:grid;place-items:center;font-weight:800;margin-bottom:.7rem}
+.hero-card .avatar{width:5.5rem;height:5.5rem;border-radius:50%;background:rgba(0,0,0,.25);display:grid;place-items:center;font-weight:800;margin-bottom:.9rem;overflow:hidden;border:3px solid rgba(255,255,255,.3)}
+.hero-card .avatar img{width:100%;height:100%;object-fit:cover;display:block}
 .hero-card strong{display:block;font-size:1.05rem}
 .hero-card span{font-size:.85rem;opacity:.85}
 
@@ -86,7 +87,10 @@ footer{border-top:1px solid var(--line);padding-block:1.6rem;text-align:center;c
 <header><div class="wrap nav">
   <span class="brand">Sam Al Kaddar</span>
   <ul><li><a href="#services">Services</a></li><li><a href="#work">Work</a></li><li><a href="#contact">Contact</a></li></ul>
-  <a class="btn btn--accent" href="https://wa.me/963930451140?text=Hi%20Sam%2C%20I%27d%20like%20to%20start%20a%20project.">Start a Project</a>
+  <div style="display:flex;gap:.6rem">
+    <a class="btn btn--ghost" href="assets/Sam-Al-Kaddar-CV.pdf" download>Download CV</a>
+    <a class="btn btn--accent" href="https://wa.me/963930451140?text=Hi%20Sam%2C%20I%27d%20like%20to%20start%20a%20project.">Start a Project</a>
+  </div>
 </div></header>
 
 <main>
@@ -98,7 +102,7 @@ footer{border-top:1px solid var(--line);padding-block:1.6rem;text-align:center;c
       <a class="btn btn--accent" href="https://wa.me/963930451140?text=Hi%20Sam%2C%20I%27d%20like%20to%20start%20a%20project.">Book a Free Call</a>
     </div>
     <div class="hero-card">
-      <div class="avatar">SK</div>
+      <div class="avatar"><img src="assets/sam-al-kaddar.png" alt="Sam Al Kaddar"></div>
       <strong>Sam Al Kaddar</strong>
       <span>UIUX &amp; Brand Designer</span>
     </div>
@@ -146,6 +150,7 @@ footer{border-top:1px solid var(--line);padding-block:1.6rem;text-align:center;c
       <div class="pf-slot"><span class="pf-tag">Social</span><div class="pf-body"><span class="plus">+</span> Social media project</div><span class="pf-title">Coming soon</span></div>
       <div class="pf-slot"><span class="pf-tag">UI/UX</span><div class="pf-body"><span class="plus">+</span> UI/UX project</div><span class="pf-title">Coming soon</span></div>
     </div>
+    <a class="btn btn--accent" style="margin-top:1.6rem" href="assets/Sam-Al-Kaddar-Portfolio.pdf" download>Download Full Portfolio</a>
   </div></section>
 
   <section class="section" id="contact"><div class="wrap">
