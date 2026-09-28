@@ -3,158 +3,626 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
 <title>Sam Al Kaddar | UI/UX & Brand Designer</title>
-<meta name="description" content="Sam Al Kaddar,UI/UX and Brand Designer specializing in user-centered digital experiences, brand identity and visual design.">
+
+<meta name="description" content="Sam Al Kaddar, UI/UX and Brand Designer specializing in user-centered digital experiences, brand identity and visual design.">
+
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 <style>
 :root{
-  --bg:#0D0D11;--surface:#17171D;--surface-2:#1D1D24;--ink:#F3F3F5;--ink-soft:#9C9CA8;
-  --accent:#FF5A33;--accent-ink:#12110F;--purple:#8B6BFF;--blue:#3AA0FF;--gold:#F2B33D;
-  --line:#2A2A32;--shadow:0 10px 30px rgba(0,0,0,.35);
+  --bg:#0D0D11;
+  --surface:#17171D;
+  --surface-2:#1D1D24;
+  --ink:#F3F3F5;
+  --ink-soft:#9C9CA8;
+  --accent:#FF5A33;
+  --accent-ink:#12110F;
+  --purple:#8B6BFF;
+  --blue:#3AA0FF;
+  --gold:#F2B33D;
+  --line:#2A2A32;
+  --shadow:0 10px 30px rgba(0,0,0,.35);
   --font:"Raleway",system-ui,sans-serif;
 }
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.6;font-size:1.02rem}
-h1,h2,h3{margin:0;font-weight:800}
-p{margin:0 0 .9rem;color:var(--ink-soft)}
-a{color:inherit;text-decoration:none}
-.wrap{max-width:1080px;margin-inline:auto;padding-inline:1.3rem}
-.section{padding-block:clamp(2.4rem,6vw,4.5rem)}
-.eyebrow{display:inline-flex;align-items:center;gap:.5rem;color:var(--accent);font-weight:700;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.7rem}
-.eyebrow::before{content:"";width:.4rem;height:.4rem;border-radius:50%;background:var(--accent)}
-.center{text-align:center}
-.center .eyebrow{justify-content:center;width:100%}
-h2.title{font-size:clamp(1.7rem,3.4vw,2.4rem);margin-bottom:.6rem}
-.lead{max-width:52ch;margin-inline:auto}
 
-header{position:sticky;top:0;z-index:10;padding-block:1rem;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(8px)}
-.nav{display:flex;align-items:center;justify-content:space-between;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.6rem 1.1rem}
-.brand{font-weight:800;font-size:1.05rem}
-.nav ul{display:flex;gap:1.5rem;list-style:none;margin:0;padding:0}
-.nav a{color:var(--ink-soft);font-weight:600;font-size:.95rem}
-.nav a:hover{color:var(--ink)}
-@media(max-width:640px){.nav ul{display:none}.nav .btn{padding:.6rem 1rem;font-size:.85rem}}
+*{
+  box-sizing:border-box
+}
 
-.btn{display:inline-flex;align-items:center;gap:.4rem;padding:.75rem 1.5rem;border-radius:999px;font-weight:700;font-size:.95rem}
-.btn--accent{background:var(--accent);color:var(--accent-ink)}
-.btn--white{background:var(--accent);color:#fff}
-.btn--ghost{border:1px solid var(--line);color:var(--ink)}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--font);
+  line-height:1.6;
+  font-size:1.02rem
+}
 
-.hero{padding-block:clamp(2.5rem,7vw,4.5rem)}
-.hero-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:2rem;align-items:center}
-@media(max-width:800px){.hero-grid{grid-template-columns:1fr}}
-.hero h1{font-size:clamp(2.2rem,5.5vw,3.4rem);line-height:1.15;margin-bottom:1.1rem}
-.hero h1 .arrow{color:var(--accent)}
-.hero .lede{font-size:1.05rem;max-width:42ch;margin-bottom:1.4rem}
-.hero-media{border-radius:24px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5;max-width:320px;margin-inline:auto}
-.hero-media img{width:100%;height:100%;object-fit:cover;display:block}
-@media(max-width:800px){.hero-media{max-width:220px}}
+h1,h2,h3{
+  margin:0;
+  font-weight:800
+}
 
-.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem;margin-top:2rem}
-@media(max-width:900px){.grid4{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){.grid4{grid-template-columns:1fr}}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:1.5rem}
-.icon{width:2.7rem;height:2.7rem;border-radius:50%;display:grid;place-items:center;margin-bottom:1.1rem}
-.icon svg{width:1.25rem;height:1.25rem}
-.icon--p{background:var(--purple)}
-.icon--b{background:var(--blue)}
-.icon--g{background:var(--gold)}
-.icon--a{background:var(--accent)}
-.card h3{font-size:1.1rem;margin-bottom:.4rem;color:var(--ink)}
-.card .more{display:inline-flex;gap:.35rem;align-items:center;font-weight:700;font-size:.9rem;color:var(--ink);margin-top:.4rem}
-.card .more svg{width:.9rem;height:.9rem}
+p{
+  margin:0 0 .9rem;
+  color:var(--ink-soft)
+}
 
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin-top:2rem}
-@media(max-width:700px){.grid2{grid-template-columns:1fr}}
-.pf-slot{background:var(--surface);border:1px dashed var(--line);border-radius:18px;padding:1.3rem;aspect-ratio:16/11;display:flex;flex-direction:column;justify-content:space-between}
-.pf-tag{display:inline-block;background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:.15rem .8rem;font-size:.78rem;font-weight:700;color:var(--ink-soft);align-self:flex-start}
-.pf-body{display:flex;align-items:center;justify-content:center;flex:1;color:var(--ink-soft);font-size:.9rem;gap:.4rem}
-.pf-body .plus{font-size:1.5rem;color:var(--accent)}
-.pf-title{font-weight:700;color:var(--ink)}
+a{
+  color:inherit;
+  text-decoration:none
+}
 
-.cta{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:clamp(2rem,5vw,3.2rem);text-align:center}
-.cta .avatar-lg{width:4.5rem;height:4.5rem;border-radius:50%;background:linear-gradient(155deg,var(--purple),var(--accent));display:grid;place-items:center;font-weight:800;margin:0 auto 1.2rem;overflow:hidden}
-.cta .avatar-lg img{width:100%;height:100%;object-fit:cover;display:block}
-.cta h2{margin-bottom:.6rem}
+.wrap{
+  max-width:1080px;
+  margin-inline:auto;
+  padding-inline:1.3rem
+}
 
-footer{border-top:1px solid var(--line);padding-block:1.6rem;text-align:center;color:var(--ink-soft);font-size:.88rem}
+.section{
+  padding-block:clamp(2.4rem,6vw,4.5rem)
+}
+
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:.5rem;
+  color:var(--accent);
+  font-weight:700;
+  font-size:.85rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  margin-bottom:.7rem
+}
+
+.eyebrow::before{
+  content:"";
+  width:.4rem;
+  height:.4rem;
+  border-radius:50%;
+  background:var(--accent)
+}
+
+.center{
+  text-align:center
+}
+
+.center .eyebrow{
+  justify-content:center;
+  width:100%
+}
+
+h2.title{
+  font-size:clamp(1.7rem,3.4vw,2.4rem);
+  margin-bottom:.6rem
+}
+
+.lead{
+  max-width:52ch;
+  margin-inline:auto
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:10;
+  padding-block:1rem;
+  background:color-mix(in srgb,var(--bg) 85%,transparent);
+  backdrop-filter:blur(8px)
+}
+
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:.6rem 1.1rem
+}
+
+.brand{
+  font-weight:800;
+  font-size:1.05rem
+}
+
+.nav ul{
+  display:flex;
+  gap:1.5rem;
+  list-style:none;
+  margin:0;
+  padding:0
+}
+
+.nav a{
+  color:var(--ink-soft);
+  font-weight:600;
+  font-size:.95rem
+}
+
+.nav a:hover{
+  color:var(--ink)
+}
+
+@media(max-width:640px){
+  .nav ul{
+    display:none
+  }
+
+  .nav .btn{
+    padding:.6rem 1rem;
+    font-size:.85rem
+  }
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:.4rem;
+  padding:.75rem 1.5rem;
+  border-radius:999px;
+  font-weight:700;
+  font-size:.95rem
+}
+
+.btn--accent{
+  background:var(--accent);
+  color:var(--accent-ink)
+}
+
+.btn--white{
+  background:var(--accent);
+  color:#fff
+}
+
+.btn--ghost{
+  border:1px solid var(--line);
+  color:var(--ink)
+}
+
+.hero{
+  padding-block:clamp(2.5rem,7vw,4.5rem)
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.5fr 1fr;
+  gap:2rem;
+  align-items:center
+}
+
+@media(max-width:800px){
+  .hero-grid{
+    grid-template-columns:1fr
+  }
+}
+
+.hero h1{
+  font-size:clamp(2.2rem,5.5vw,3.4rem);
+  line-height:1.15;
+  margin-bottom:1.1rem
+}
+
+.hero .lede{
+  font-size:1.05rem;
+  max-width:42ch;
+  margin-bottom:1.4rem
+}
+
+.hero-media{
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  aspect-ratio:4/5;
+  max-width:320px;
+  margin-inline:auto
+}
+
+.hero-media img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block
+}
+
+@media(max-width:800px){
+  .hero-media{
+    max-width:220px
+  }
+}
+
+.grid4{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1.1rem;
+  margin-top:2rem
+}
+
+@media(max-width:900px){
+  .grid4{
+    grid-template-columns:1fr 1fr
+  }
+}
+
+@media(max-width:520px){
+  .grid4{
+    grid-template-columns:1fr
+  }
+}
+
+.card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:1.5rem
+}
+
+.icon{
+  width:2.7rem;
+  height:2.7rem;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  margin-bottom:1.1rem
+}
+
+.icon svg{
+  width:1.25rem;
+  height:1.25rem
+}
+
+.icon--p{
+  background:var(--purple)
+}
+
+.icon--b{
+  background:var(--blue)
+}
+
+.icon--g{
+  background:var(--gold)
+}
+
+.icon--a{
+  background:var(--accent)
+}
+
+.card h3{
+  font-size:1.1rem;
+  margin-bottom:.4rem;
+  color:var(--ink)
+}
+
+.card .more{
+  display:inline-flex;
+  gap:.35rem;
+  align-items:center;
+  font-weight:700;
+  font-size:.9rem;
+  color:var(--ink);
+  margin-top:.4rem
+}
+
+.card .more svg{
+  width:.9rem;
+  height:.9rem
+}
+
+.grid2{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1.1rem;
+  margin-top:2rem
+}
+
+@media(max-width:700px){
+  .grid2{
+    grid-template-columns:1fr
+  }
+}
+
+.pf-slot{
+  background:var(--surface);
+  border:1px dashed var(--line);
+  border-radius:18px;
+  padding:1.3rem;
+  aspect-ratio:16/11;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between
+}
+
+.pf-tag{
+  display:inline-block;
+  background:var(--surface-2);
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:.15rem .8rem;
+  font-size:.78rem;
+  font-weight:700;
+  color:var(--ink-soft);
+  align-self:flex-start
+}
+
+.pf-body{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:1;
+  color:var(--ink-soft);
+  font-size:.9rem;
+  gap:.4rem
+}
+
+.pf-body .plus{
+  font-size:1.5rem;
+  color:var(--accent)
+}
+
+.pf-title{
+  font-weight:700;
+  color:var(--ink)
+}
+
+.cta{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:clamp(2rem,5vw,3.2rem);
+  text-align:center
+}
+
+.cta .avatar-lg{
+  width:4.5rem;
+  height:4.5rem;
+  border-radius:50%;
+  background:linear-gradient(155deg,var(--purple),var(--accent));
+  display:grid;
+  place-items:center;
+  font-weight:800;
+  margin:0 auto 1.2rem;
+  overflow:hidden
+}
+
+.cta .avatar-lg img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block
+}
+
+.cta h2{
+  margin-bottom:.6rem
+}
+
+footer{
+  border-top:1px solid var(--line);
+  padding-block:1.6rem;
+  text-align:center;
+  color:var(--ink-soft);
+  font-size:.88rem
+}
 </style>
 </head>
+
 <body>
-<header><div class="wrap nav">
-  <span class="brand">Sam Al Kaddar</span>
-  <ul><li><a href="#services">Services</a></li><li><a href="#downloads">Downloads</a></li><li><a href="#contact">Contact</a></li></ul>
-  <a class="btn btn--white" href="https://wa.me/963930451140?text=Hi%20Sam%2C%20I%27d%20like%20to%20start%20a%20project.">Start a Project</a>
-</div></header>
+
+<header>
+  <div class="wrap nav">
+    <span class="brand">Sam Al Kaddar</span>
+
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#downloads">Downloads</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <a class="btn btn--white" href="https://wa.me/963930451140?text=Hi%20Sam%2C%20I%27d%20like%20to%20start%20a%20project.">
+      Start a Project
+    </a>
+  </div>
+</header>
 
 <main>
-  <section class="hero"><div class="wrap hero-grid">
-    <div>
-      <p class="eyebrow">UIUX &amp; Brand Designer</p>
-      <h1>Where <span class="arrow">→</span> brand &amp; design<br>meets perfection</h1>
-      <p class="lede">I design distinctive brands and intuitive digital experiences that help businesses stand out.</p>
-      <a class="btn btn--accent" href="https://wa.me/963930451140?text=Hi%20Sam%2C%20I%27d%20like%20to%20start%20a%20project.">Book a Free Call</a>
-    </div>
-    <div class="hero-media">
-      <img src="sam-al-kaddar.png" alt="Sam Al Kaddar">
-    </div>
-  </div></section>
 
-  <section class="section center" id="services"><div class="wrap">
-    <p class="eyebrow">services</p>
-    <h2 class="title">Check my services</h2>
-    <p class="lead">Four core disciplines, combinable into one project depending on your needs.</p>
-    <div class="grid4" style="text-align:left">
-      <div class="card">
-        <div class="icon icon--p"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M3 21l6-1 11-11-5-5L4 15l-1 6z"/></svg></div>
-        <h3>Brand Identity</h3>
-        <p>Logo, colors, typography and pattern for a distinctive presence.</p>
-        <span class="more">Request quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
-      </div>
-      <div class="card">
-        <div class="icon icon--b"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9h16"/></svg></div>
-        <h3>Print Design</h3>
-        <p>Business cards, invoices, stamps and letterheads, print-ready.</p>
-        <span class="more">Request quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
-      </div>
-      <div class="card">
-        <div class="icon icon--g"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></div>
-        <h3>Social Media</h3>
-        <p>Unified profile, cover and post templates for your channels.</p>
-        <span class="more">Request quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
-      </div>
-      <div class="card">
-        <div class="icon icon--a"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></svg></div>
-        <h3>UI/UX</h3>
-        <p>App and website interfaces built on solid user experience.</p>
-        <span class="more">Request quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
-      </div>
-    </div>
-  </div></section>
+  <section class="hero">
+    <div class="wrap hero-grid">
 
-  <section class="section center" id="downloads"><div class="wrap">
-    <p class="eyebrow">downloads</p>
-    <h2 class="title">Grab my CV &amp; portfolio</h2>
-    <p class="lead">Take a closer look at my experience and previous work.</p>
-    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.6rem">
-      <a class="btn btn--ghost" style="min-width:210px;justify-content:center" href="Sam-Al-Kaddar-CV.pdf" download>Download CV</a>
-      <a class="btn btn--accent" style="min-width:210px;justify-content:center" href="Sam-Al-Kaddar-Portfolio.pdf" download>Download Portfolio</a>
-    </div>
-  </div></section>
+      <div>
+        <p class="eyebrow">UI/UX &amp; Brand Designer</p>
 
-  <section class="section" id="contact"><div class="wrap">
-    <div class="cta">
-      <div class="avatar-lg"><img src="sam-al-kaddar.png" alt="Sam Al Kaddar"></div>
-      <h2 class="title">Let's work together</h2>
-      <p class="lead" style="margin-inline:auto">Tell me about your project on WhatsApp and I'll send you a custom quote and timeline.</p>
-      <a class="btn btn--accent" href="https://wa.me/963930451140?text=Hi%20Sam%2C%20I%27d%20like%20to%20start%20a%20project.">Message on WhatsApp</a>
+        <h1>
+          Where branding meets<br>
+          intuitive experiences.
+        </h1>
+
+        <p class="lede">
+          I design distinctive brands and intuitive digital experiences that help businesses stand out.
+        </p>
+
+        <a class="btn btn--accent" href="https://wa.me/963930451140?text=Hi%20Sam%2C%20I%27d%20like%20to%20start%20a%20project.">
+          Book a Free Call
+        </a>
+      </div>
+
+      <div class="hero-media">
+        <img src="sam-al-kaddar.png" alt="Sam Al Kaddar">
+      </div>
+
     </div>
-  </div></section>
+  </section>
+
+
+  <section class="section center" id="services">
+    <div class="wrap">
+
+      <p class="eyebrow">services</p>
+
+      <h2 class="title">Check my services</h2>
+
+      <p class="lead">
+        Four core disciplines, combinable into one project depending on your needs.
+      </p>
+
+      <div class="grid4" style="text-align:left">
+
+        <div class="card">
+          <div class="icon icon--p">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+              <path d="M3 21l6-1 11-11-5-5L4 15l-1 6z"/>
+            </svg>
+          </div>
+
+          <h3>Brand Identity</h3>
+
+          <p>
+            Logo, colors, typography and pattern for a distinctive presence.
+          </p>
+
+          <span class="more">
+            Request quote
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M7 17L17 7M7 7h10v10"/>
+            </svg>
+          </span>
+        </div>
+
+
+        <div class="card">
+          <div class="icon icon--b">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+              <rect x="4" y="4" width="16" height="16" rx="2"/>
+              <path d="M4 9h16"/>
+            </svg>
+          </div>
+
+          <h3>Print Design</h3>
+
+          <p>
+            Business cards, invoices, stamps and letterheads, print-ready.
+          </p>
+
+          <span class="more">
+            Request quote
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M7 17L17 7M7 7h10v10"/>
+            </svg>
+          </span>
+        </div>
+
+
+        <div class="card">
+          <div class="icon icon--g">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+              <circle cx="12" cy="12" r="8"/>
+              <path d="M12 8v4l3 2"/>
+            </svg>
+          </div>
+
+          <h3>Social Media</h3>
+
+          <p>
+            Unified profile, cover and post templates for your channels.
+          </p>
+
+          <span class="more">
+            Request quote
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M7 17L17 7M7 7h10v10"/>
+            </svg>
+          </span>
+        </div>
+
+
+        <div class="card">
+          <div class="icon icon--a">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+              <rect x="3" y="4" width="18" height="16" rx="2"/>
+              <path d="M3 9h18M9 9v11"/>
+            </svg>
+          </div>
+
+          <h3>UI/UX</h3>
+
+          <p>
+            App and website interfaces built on solid user experience.
+          </p>
+
+          <span class="more">
+            Request quote
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M7 17L17 7M7 7h10v10"/>
+            </svg>
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section center" id="downloads">
+    <div class="wrap">
+
+      <p class="eyebrow">downloads</p>
+
+      <h2 class="title">Grab my CV &amp; portfolio</h2>
+
+      <p class="lead">
+        Take a closer look at my experience and previous work.
+      </p>
+
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.6rem">
+
+        <a class="btn btn--ghost" style="min-width:210px;justify-content:center" href="Sam-Al-Kaddar-CV.pdf" download>
+          Download CV
+        </a>
+
+        <a class="btn btn--accent" style="min-width:210px;justify-content:center" href="Sam-Al-Kaddar-Portfolio.pdf" download>
+          Download Portfolio
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" id="contact">
+    <div class="wrap">
+
+      <div class="cta">
+
+        <div class="avatar-lg">
+          <img src="sam-al-kaddar.png" alt="Sam Al Kaddar">
+        </div>
+
+        <h2 class="title">Let's work together</h2>
+
+        <p class="lead" style="margin-inline:auto">
+          Tell me about your project on WhatsApp and I'll send you a custom quote and timeline.
+        </p>
+
+        <a class="btn btn--accent" href="https://wa.me/963930451140?text=Hi%20Sam%2C%20I%27d%20like%20to%20start%20a%20project.">
+          Message on WhatsApp
+        </a>
+
+      </div>
+    </div>
+  </section>
+
 </main>
 
-<footer><div class="wrap">© 2026 Sam Al Kaddar — UIUX &amp; Brand Designer</div></footer>
+<footer>
+  <div class="wrap">
+    © 2026 Sam Al Kaddar — UI/UX &amp; Brand Designer
+  </div>
+</footer>
+
 </body>
 </html>
